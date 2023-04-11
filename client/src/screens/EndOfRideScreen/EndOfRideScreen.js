@@ -10,10 +10,6 @@ const EndOfRideScreen = ({route}) => {
   const {passengers} = route.params
   let userList = passengers
 
-  if(!Array.isArray(userList)){
-    userList = [userList];
-  }
-
   return (
     <View style={styles.root}>
         <View style={styles.container}>

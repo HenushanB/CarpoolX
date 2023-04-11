@@ -8,7 +8,11 @@ import { useNavigation, useRoute } from '@react-navigation/native';
 const EndOfRideScreen = ({route}) => {
   const navigation = useNavigation()
   const {passengers} = route.params
-  const userList = passengers
+  let userList = passengers
+
+  if(!Array.isArray(userList)){
+    userList = [userList]
+  }
 
   return (
     <View style={styles.root}>

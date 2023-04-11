@@ -11,7 +11,7 @@ const EndOfRideScreen = ({route}) => {
   let userList = passengers
 
   if(!Array.isArray(userList)){
-    userList = [userList]
+    userList = [userList];
   }
 
   return (
